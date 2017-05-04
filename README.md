@@ -1,2 +1,2 @@
 # batch_scripts
-A list of batch scripts I think are really useful
+A list of batch scripts I think are really useful that I wrote these myself.
