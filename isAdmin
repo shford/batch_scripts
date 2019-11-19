@@ -1,0 +1,25 @@
+rem This program has been tested on Windows 7, 8, 8.1, and 10
+
+@echo off
+title Check That Something Is Running As Administrator
+ver
+echo.
+echo.
+echo Administrative permissions required. Detecting permissions...
+
+net session >nul 2>&1
+if %errorLevel% == 0 (
+	echo Success: Administrative permissions confirmed.
+	echo.
+  echo Put File or Code Here
+	echo.	
+) else (
+	echo Failure: Current permissions inadequate.
+	echo Attempting elevate permissions.
+
+	rem Restart Process Running As Administrator
+  echo Replace path in the code below to the path to your program
+  echo.
+  echo. Then delete this block and uncomment the code below by deleting rem
+	rem runas.exe /noprofile /user:.\Administrator %USERPROFILE%\Desktop\path
+)
