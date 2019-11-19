@@ -1,6 +1,5 @@
-rem Shoutout to myself, this took like 30 minutes
 color 4F
-title "Don't feel like waiting"
+title "Shutdown"
 @echo off
 cls
 setlocal enabledelayedexpansion
